@@ -29,6 +29,7 @@ DIS9079 Interacciones inalámbricas, primer semestre 2026
 | [13](./00-docentes/sesion-13/) | 06-08 lun   | TODO                                                 |
 | [14](./00-docentes/sesion-14/) | 06-15 lun   | TODO                                                 |
 | [15](./00-docentes/sesion-15/) | 06-22 lun   | examen                                               |
+
 ## Evaluaciones
 
 La nota final del curso se compone de:

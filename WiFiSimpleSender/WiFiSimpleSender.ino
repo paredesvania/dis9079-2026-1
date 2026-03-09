@@ -10,6 +10,11 @@
   This example code is in the public domain.
 */
 
+// crear archivo arduino_secrets.h
+// #define SECRET_SSID "daydream"
+// #define SECRET_PASS "what3v3r"
+
+
 #include <ArduinoMqttClient.h>
 #if defined(ARDUINO_SAMD_MKRWIFI1010) || defined(ARDUINO_SAMD_NANO_33_IOT) || defined(ARDUINO_AVR_UNO_WIFI_REV2)
   #include <WiFiNINA.h>
@@ -39,7 +44,8 @@ char pass[] = SECRET_PASS;    // your network password (use for WPA, or use as k
 WiFiClient wifiClient;
 MqttClient mqttClient(wifiClient);
 
-const char broker[] = "test.mosquitto.org";
+// const char broker[] = "192.168.1.134";
+const char broker[] = "10.24.242.179";
 int        port     = 1883;
 const char topic[]  = "arduino/simple";
 
@@ -69,10 +75,10 @@ void setup() {
 
   // You can provide a unique client ID, if not set the library uses Arduino-millis()
   // Each client must have a unique client ID
-  // mqttClient.setId("clientId");
+  mqttClient.setId("montoyamoraga");
 
   // You can provide a username and password for authentication
-  // mqttClient.setUsernamePassword("username", "password");
+  mqttClient.setUsernamePassword("matbutom", "dis9079");
 
   Serial.print("Attempting to connect to the MQTT broker: ");
   Serial.println(broker);
