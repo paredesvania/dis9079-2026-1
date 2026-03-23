@@ -35,3 +35,11 @@ tres párrafos
 ## conclusiones
 
 tres párrafos
+
+## referencias
+
+lista de enlaces, libros, clases, tutoriales, etc
+
+* uno
+* dos
+* etc

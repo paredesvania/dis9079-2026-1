@@ -161,13 +161,13 @@ revisamos el documento `Getting Started` que está en esta misma carpeta. tambi�
 
 estos grupos de trabajo se mantendrán hasta el fin de la solemne-01, que es en 2 semanas más.
 
-el desafío es enviar un mensaje desde la placa Raspberry Pi Pico 2W, y recibirla en la placa Arduino Uno R4 WiFi, y mostrarla en el monitor serial o similar.
+el desafío es enviar un mensaje desde la placa Arduino Uno R4 Wifi, y recibirla en la placa Raspberry Pi Pico 2 W, y mostrarla en el monitor serial o similar.
 
 este desafío es de código y orden, no de conexiones con cables.
 
 el mínimo que esperamos es que la placa Arduino envíe mensajes a una cierta frecuencia, y que estos mensajes prendan y apaguen la luz incorporada de la placa Raspberry Pi.
 
-queremos que cada grupo sea divergente, que envíen mensajes distintos, que funcionen a distintas frecuencias, o que incluso si quieren expandan la interacción, agregando un botón en la Raspberry Pi para enviar distintos mensajes, o agregando un LED extra o un motor o similar a la placa Arduino para que reaccione a los mensajes.
+queremos que cada grupo sea divergente, que envíen mensajes distintos, que funcionen a distintas frecuencias, o que incluso si quieren expandan la interacción, agregando un botón en la placa Arduino para enviar distintos mensajes, o agregando un LED extra o un motor o similar a la placa Raspberry para que reaccione a los mensajes.
 
 esta solemne será difícil y se valorará el orden, el esfuerzo, el intento.
 
