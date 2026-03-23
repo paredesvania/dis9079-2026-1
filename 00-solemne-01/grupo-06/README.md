@@ -1,10 +1,10 @@
-# grupo-xx
+# Grupo-06
 
 ## integrantes
 
-* nombre completo
-* nombre completo
-* nombre completo
+* Renata De Los Ángeles Arévalo Urra
+* Isidora Andrea Pérez Maulén
+* Nicolás Elías Valdés Greve
 
 ## descripción del proyecto
 
