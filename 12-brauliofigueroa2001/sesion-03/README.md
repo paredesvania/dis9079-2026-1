@@ -65,3 +65,7 @@ vscode
 - probaremos códigos
 
 - aarón dejó pdfs de raspberry, uno inicial y otro con todo lo que se puede hacer, están en sesión 3
+
+- cada grupo tiene un arduino y un número como tal, esto con objetivo de que no nos mezclemos al momento de conectarnos todos
+
+- existe una carpeta con un password
