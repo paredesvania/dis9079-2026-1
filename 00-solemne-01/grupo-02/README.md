@@ -1,10 +1,10 @@
-# grupo-xx
+# amistadesamigo
 
 ## integrantes
 
-* nombre completo
-* nombre completo
-* nombre completo
+* Magdalena Balart
+* Jesús Miranda
+* Carla Nuñez
 
 ## descripción del proyecto
 
