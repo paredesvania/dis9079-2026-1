@@ -1,10 +1,9 @@
-# grupo-xx
+# grupo-11
 
 ## integrantes
 
-* nombre completo
-* nombre completo
-* nombre completo
+* Anays Valentina Cornejo Candia
+* Benjamin Alonso Alvarez Pavez
 
 ## descripción del proyecto
 
