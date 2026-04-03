@@ -82,6 +82,24 @@ para los puntos 5. y 6. se evaluará la profundidad de la investigación, la cla
 
 ## tutoriales para empezar
 
+### sobre Adafruit IO
+
 usaremos Adafruit IO para enviar información entre dos placas distintas conectadas a dos computadores distintos, vía Adafruit IO.
 
 - tutorial de Adafruit IO: <https://learn.adafruit.com/adafruit-io-basics-feather-m0-wifi/overview>
+
+## sobre instalación en tu computadora
+
+instalaremos la biblioteca de Adafruit IO para Arduino.
+
+esta biblioteca está disponible para su lectura en el repositorio <https://github.com/adafruit/Adafruit_IO_Arduino>.
+
+para instalarla en nuestro software `Arduino IDE`, debemos seguir los siguientes pasos:
+
+- abrir el software `Arduino IDE`.
+- ir al menú lateral izquierdo, al tercer ícono de `Library Manager`.
+- en el buscador de la parte superior derecha, escribir `Adafruit IO Arduino`.
+- seleccionar la biblioteca `Adafruit IO Arduino` y hacer clic en el botón `Install`. en abril 2026 la versión más reciente es la `4.3.4`, les recomiendo instalar esa o una más reciente.
+- al momento de instalar, el software te preguntará si quieres instalar las otras bibliotecas que necesita `Adafruit IO Arduino` para funcionar correctamente. es muy importante que ACEPTES y SÍ las instales. es tan importante que lo escribí en mayúsculas.
+
+## sobre la cuenta de Adafruit IO
