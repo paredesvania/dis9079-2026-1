@@ -69,7 +69,7 @@ lunes 09 marzo 2026
 -Diseñador Latinoamericano desarrollador de __Wiring__, de codigo abierto
 -Idea fue robada y se creo __Arduino__
 
-###Raspberry Pi Pico
+### Raspberry Pi Pico
 - __Tasty Chip__; instrumento hecho con computador raspberry
 
  
