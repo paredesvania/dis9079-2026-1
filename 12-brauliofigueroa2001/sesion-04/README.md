@@ -160,6 +160,31 @@ Serial.println("Luz apagada. ");
 
 - lo hice mal al principio, me dio este error
 
+![error](./imagenes/error1config.JPG)
+
+- después me acordé que el archivo .h debía estar al lado del .ino en pestañas, es decir, tenían que estar en la misma carpeta lol. Esto lo aprendí el año pasado pero se me había olvidado, si no estaban de esta forma el arduino no iba a encontrar el .h por más que lo tuviera descargado
+
+![solucion](./imagenes/solucionError.JPG)
+
+- los puse en una misma carpeta, cerré arduino y lo abrí, ahora si me incluyó el .h
+
+- antes de esto había abierto el .h en vscode y se veía así
+
+![vscode](./imagenes/configReemplazar.JPG)
+
+- después caché que se abría en arduino e hice lo que mencioné anteriormente, reemplacé los enunciados IO USERNAME y IO KEY por VALORES SECRETOS
+
+- probé el código y compiló, no me apareció el error de conectando a Adafruit IOFirmware version 0.3.0 is outdated. Latest version is 0.5.2
+21:24:06.104 -> Please upgrade the WiFiS3 firmware
+
+- evidencia
+
+![codigo](./imagenes/codigoCompila1.JPG)
+
+- no sé si hice algo mal o no o quizá es porque el firmware de mi placa sí estaba actualizado
+
+- hasta ahí llegué de momento, quería ver el tutorial oficial de la página que mandaron pero el link aparece malo y tengo hartas dudas así que le preguntaré a aarón mañana
+
 
 
 
