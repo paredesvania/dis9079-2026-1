@@ -175,7 +175,7 @@ Serial.println("Luz apagada. ");
 - después caché que se abría en arduino e hice lo que mencioné anteriormente, reemplacé los enunciados IO USERNAME y IO KEY por VALORES SECRETOS
 
 - probé el código y compiló, no me apareció el error de conectando a Adafruit IOFirmware version 0.3.0 is outdated. Latest version is 0.5.2
-21:24:06.104 -> Please upgrade the WiFiS3 firmware
+21:24:06.104 -> Please upgrade the WiFiS3 firmware, CORREGIR QUE SÍ ME APARECIÓ ESTE ERROR PERO LO SOLUCIONAMOS CON AARÓN LA MAÑANA DEL 6 DE ABRIL, adjuntar pantallazo de monitor serial
 
 - evidencia
 
@@ -183,7 +183,31 @@ Serial.println("Luz apagada. ");
 
 - no sé si hice algo mal o no o quizá es porque el firmware de mi placa sí estaba actualizado
 
-- hasta ahí llegué de momento, quería ver el tutorial oficial de la página que mandaron pero el link aparece malo y tengo hartas dudas así que le preguntaré a aarón mañana
+- hasta ahí llegué de momento, quería ver el tutorial oficial de la página que mandaron pero el link aparece malo
+
+actualización 6 de abril en la mañana con aarón
+
+- en la mañana aarón me dijo que revisara bien las credenciales porque vió mi clave y efectivamente no eran las credenciales exactas, la password era la que me da la página, no la que yo le asigno a mi cuenta
+
+- por obvios motivos no colocaré mis credenciales lol
+
+- al colocar correctamente las credenciales y el nombre y la clave del wifi
+
+- también tuve que actualizar el firmware, ya que, al colocar las credenciales bien, el código funcionó entonces ahora daba el error de actualizar firmware, que era lo que precisamente tenía que suceder, actualizamos la placa y pasó esto:
+
+![fallologro](./imagenes/falloylologro.JPG)
+
+- el código se conectó y poco a poco comenzaría a enviar
+
+![enviando](./imagenes/enviandoAdafruit.JPG)
+
+- ahora sí comenzó a enviar, ahora debíamos abrir nuestra página para ver estos datos que se estaban enviando
+
+![servidorAdafruit](./imagenes/servidorAdafruit.JPG)
+
+![servidorAdafruit](./imagenes/servidorAdafruit2.JPG)
+
+- esto muestra en vivo los datos que están llegando desde arduino hacia el servidor en adafruit, lo logramos amigos
 
 
 
