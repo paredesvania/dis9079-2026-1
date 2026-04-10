@@ -88,7 +88,7 @@ por mi wifi
 
 ```cpp
 #define WIFI_SSID "Ruz Pizarro 5G"
-#define WIFI_PASS "agosto2019"
+#define WIFI_PASS "blabla"
 ```
 
 Luego probé el ejemplo para ver si en el monitor serial salía el mensaje de **"Connecting to Adafruit IO"** , pero solo me aparecía signos de interrogación
