@@ -15,7 +15,13 @@ Partimos utilizando el código de ejemplo que subió Aaron a Github, para aprend
 Luego de solucionar eso el código estaba bien, pero aún así no se conectaba, solo aparecía una serie de puntos infinitos (...........) que no nos dimos cuenta, hasta que en clases Aaron actualizó los Arduinos que tenian ese error y se solucionó, resulta que al final de los puntos habia un mensaje de "Please upgrade the WiFiS3 firmware!" pero no alcanzaba a verse.
 Una vez actualizado el Arduino pudimos conectar bien con Adafruit IO y probamos con un ejercicio que nos dió Aaron, que consistía en conectarse a un feed en Adafruit IO el cual estaba conectado a una Dashboard con un contador,ese ejercicio si funcionó.
 
-Luego de los intentos fallidos de la clase pasada, seguíamos con las ganas de controlar el LED conectado al Arduino, mediante el dashboard de Adafruit IO, así que investigamos un poco en blogs, foros y github pero no logramos crear el código desde 0 así que acudimos a Claude AI con lo que queriamos hacer
+Luego de los intentos fallidos de la clase pasada, seguíamos con las ganas de controlar el LED conectado al Arduino, mediante el dashboard de Adafruit IO, así que investigamos un poco en blogs, foros y github pero no logramos crear el código desde 0 así que acudimos a Claude AI con lo que queriamos hacer.
+
+le escribimos el siguiente prompt:
+
+>Necesito generar un codigo para arduino ide que me permita controlar de otro computador a traves de adafruit io el arduino conectado a otro computador, este arduino tambien tendria conectado una luz led que me gustaria prender y apagar desde los dashboards de adafruit io.
+
+Creamos un feed en Adafruit IO con el nombre de led-control y un Dashboard vinculado a este mismo feed, por el que por medio de un toggle podríamos prender y apagar la luz del LED. Con esto conseguimos el código, lo probamos y si funcionaba pero le pedimos ayuda con como hacer las conexiones de la protoboard al Arduino, luego de lograr las conexiones probamos el código y si se pudo conectar a Adafruit IO, de otro dispositivo con acceso al dashboard pudimos controlar la luz LED prendiendola y apagandola.
 
 
 
