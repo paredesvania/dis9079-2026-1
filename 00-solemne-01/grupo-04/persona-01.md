@@ -118,3 +118,10 @@ Tipos de obras que hace.
 + Instalaciones interactivas: espacios donde el espectador activa la obra.
 + Performance audiovisual: combina música, visuales generados en vivo y programación.
 + Software creativo: desarrolla herramientas para artistas y diseñadores.
+
+## Messa di Voce
+2003 | Tmema (Golan Levin y Zachary Lieberman) con Jaap Blonk y Joan La Barbara
+
+<img width="665" height="356" alt="image" src="https://github.com/user-attachments/assets/ef4a5584-97c9-4634-a408-e85405b5580c" />
+
++ Messa di Voce complementa el habla, los gritos y las canciones de dos vocalistas con visualizaciones interactivas en tiempo real. El proyecto aborda temas como la comunicación abstracta, las relaciones sinestésicas, el lenguaje de los dibujos animados y los sistemas de escritura y puntuación, todo ello dentro del contexto de una narrativa audiovisual sofisticada, lúdica y virtuosa. Un software personalizado transforma cada matiz vocal en gráficos complejos, sutilmente diferenciados y altamente expresivos. Messa di Voce se sitúa en la intersección de los extremos de la interpretación humana y tecnológica, fusionando la espontaneidad impredecible y las técnicas vocales extendidas de los improvisadores humanos con las últimas tecnologías de visión artificial y análisis del habla. Completamente sin palabras, pero profundamente verbal, Messa di Voce está diseñada para provocar preguntas sobre el significado y los efectos de los sonidos del habla, los actos de habla y el entorno inmersivo del lenguaje.
