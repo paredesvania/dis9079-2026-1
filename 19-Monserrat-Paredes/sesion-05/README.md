@@ -210,6 +210,9 @@ nombreFeed->save(contador);
 
 -Se corrigió a 115200
 
+![solucion](./imagenes/audio de audio.png)
+
+
 
 
 
