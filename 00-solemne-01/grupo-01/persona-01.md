@@ -239,7 +239,7 @@ Su principal función es generar automáticamente los frames en formato bitmap, 
 
 ### Suhayya Abu-Hakima
 
-<img src="./imagenes/sofiacartes_imagenes/SuhayyaAbu-Hakima.jpg" alt="install" width="500">
+<img src="./imagenes/sofiacartes_imagenes/SuhayyaAbu-Hakima.jpg" alt="install" width="300">
 
 #### ¿Quién es Suhayya Abu-Hakima?
 
@@ -270,3 +270,17 @@ Uno de sus principales aportes fue el desarrollo del Amika Mobility Server, un s
 - Infraestructura de ciudades inteligentes (smart cities) para gestión de riesgos.
 
 Es genial :)
+
+## dificultades y aprendizajes 
+
+´Dificultades´
+
+- Concretar qué queríamos realizar para la solemne, qué componentes agregar para que se nos hiciera curioso y didactico el aprendizaje.
+- Juntar la pantalla OLED en el código, para que se encienda y apague con las señales emitidas.
+
+´Aprendizajes´
+
+- Las funciones de Adafruit IO y cómo implementarlas en el código.
+- Llave para colocar en el código en arduino
+- Interacciones inalámbricas mediante una red de wifi
+- Uso con WipperSnapper (No-Code) (para usuarios que utilizan la plataforma de configuración sin código, la gestión es automatizada(.
