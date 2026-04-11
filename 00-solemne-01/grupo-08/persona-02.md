@@ -56,8 +56,51 @@ Bonus :)
 * **Integración con Webhooks y Dashboards:** Investigué que Adafruit IO no solo recibe datos, sino que permite crear Dashboards visuales en tiempo real sin escribir código extra. Además, tiene integración con Webhooks, lo que permitiría enviar una alerta a mi celular o un correo si mi sensor detecta algo crítico, expandiendo la interacción fuera de la placa.
 * **Limitaciones del Plan Free (Rate Limiting):** Es importante notar que el plan gratuito tiene un límite de 30 datos por minuto y almacenamiento de datos por 30 días. Para nuestro proyecto esto es suficiente, pero entender estas limitaciones es vital para no "spamear" el broker y evitar que la cuenta sea bloqueada por exceso de tráfico.
 
-Ejercicios realizando el lunes
+🗓️ Bitácora del Lunes: Mis Primeros Pasos en el IoT
 
+El lunes fue nuestro "bautismo de fuego". Hicimos dos ejercicios clave que me sirvieron para entender que en el IoT, si una pieza pequeña falla, nada funciona.
+Ejercicio 1: El "Hola Mundo" en la Nube
+
+El objetivo era conectar el Arduino R4 WiFi a Adafruit IO por primera vez.
+
+1. Mi experiencia: Al principio fue un enredo con las credenciales. Aprendí que el código es súper sensible: una mayúscula mal puesta en el nombre del WiFi y ya no conectaba.
+2. Lo que descubrí: Aquí fue cuando caché lo de los Puertos COM. Al conectar mi placa, vi que aparecía como COM14. Entendí que ese es el "asiento" que ocupa mi Arduino en el PC. También noté que si el código decía 115200 baudios y el monitor estaba en 9600, solo veía símbolos raros (rombos). Sincronizarlos fue la clave para ver el mensaje de "conectado.
+
+Ejercicio 2: El Drama del LED y el Dashboard
+
+Aquí la meta era pro pro: prender un LED físico con un botón digital desde Adafruit.
+
+1. El "Fail" del día: ¡Se nos quemó un LED!:( Entre tanto cable y resistencia, pusimos una que no era y el pobre LED no aguantó, se puso como de colocar naranjo y salió humo. 
+2. Aprendizaje técnico: Usamos el multímetro para revisar el voltaje. Aprendí que no se trata de conectar por conectar; hay que entender cuánta energía aguanta cada componente. Aunque el tiempo nos pilló y no alcanzamos a ver el LED prendiendo desde el switch ese mismo lunes, me sirvió para entender la lógica bidireccional: yo aprieto un botón en la web -> viaja a la nube -> el Arduino recibe la orden -> se prende la luz.
+
+Mis Observaciones de Programadora Novata 
+
+Durante estos dos ejercicios, me fijé en detalles del Arduino IDE que ahora me hacen la vida más fácil:
+
+* **Colores y Comentarios:** Descubrí que el texto en gris (con //) es mi mejor amigo para dejar notas. También que el código cambia de color cuando reconoce un comando, lo que me ayuda a saber si escribí bien una función.
+* **Estructura:** Aprendí que el #include tiene que ir arriba sí o sí. Es como presentar a los invitados antes de empezar la fiesta.
+* **Redes:** Me voló la cabeza entender que no todos los WiFi sirven; tuve que configurar el Hotspot en 2.4 GHz porque mi Arduino no "ve" la frecuencia de 5 GHz que suelen usar los celulares modernos.
+
+Experimento Final: Comunicación entre Nodos (Emisor y Receptor)
+
+Después de los ejercicios del lunes, el miércoles nos tiramos a la piscina con un desafío mucho más pro: la comunicación bidireccional entre dos Arduinos R4 WiFi usando la matriz de LEDs de 12x8.
+El Objetivo del Experimento
+
+Queríamos demostrar que podíamos tener dos sistemas de hardware totalmente independientes que se comunicaran en tiempo real:
+
+* **Arduino Emisor: Se encargaba de mandar datos numéricos a la nube de Adafruit.**
+* **Arduino Receptor: Capturaba esa información desde la nube y la traducía visualmente "dibujándola" en su matriz de LEDs.**
+
+Mis Observaciones Técnicas (Lo que aprendí en el proceso):
+
+1. El poder de los Feeds: Entendí que el "feed" en Adafruit no es solo una base de datos, es el punto de encuentro. El emisor publica en el feed y el receptor se suscribe a él. Es como si el emisor dejara una carta en un buzón y el receptor la fuera a buscar apenas llega.
+2. La Matriz de LEDs (12x8): Fue emocionante ver cómo un número que enviábamos desde el computador o desde el otro Arduino se convertía en una forma física en la matriz. Aprendí que programar la matriz requiere una lógica de "dibujo" por coordenadas, lo cual integra conceptos de programación más avanzados.
+3. Actualización de Firmware (v0.6.0): Aquí nos dimos cuenta de que si las placas no tienen el firmware actualizado, la comunicación se cae o es súper inestable. Es como tratar de hablar por una radio antigua; si el chip de WiFi no está al día, no hay "handshake" con la nube.
+4. Red Dedicada (Hotspot 2.4 GHz): Para que esto funcionara con dos placas a la vez, fue vital usar un punto de acceso dedicado. Descubrí que al tener dos dispositivos mandando y recibiendo datos al mismo tiempo, la estabilidad de la red es el corazón de todo el proyecto. Lo más imporatnte que aprendí es que esta comunicación se puede realizar desde cualquier parte del mundo; yo podría estar en mi casa y mi compañero en la suya, y las placas se seguirían hablando. Eso sí, siempre y cuando se cumplan estas "cláusulas" técnicas:
+
+    Que ambos dispositivos estén en una red de 2.4 GHz.
+    Que el Firmware de las placas esté actualizado (v0.6.0).
+    Que las credenciales (AIO Key y Username) en el código sean las correctas para entrar al mismo "buzón" en la nube.
 
 
 
