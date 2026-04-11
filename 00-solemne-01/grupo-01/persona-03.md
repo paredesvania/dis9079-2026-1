@@ -447,11 +447,17 @@ void loop()
 }
 ```
 
-<img src="./imagenes/vxlentiinaa_imagenes/gatito.jpg" alt="error" width="300">
+|1|2|
+|---|---|
+| <img src="./imagenes/vxlentiinaa_imagenes/gatito.jpg" alt="error" width="400"> | <img src="./imagenes/vxlentiinaa_imagenes/noprende.gif" alt="error" width="300"> |
 
 - También otra dificultad, fue al principio; queríamos conectar un botón al arduino y que desde el botón mandara el encendido y apagado para que en la pantalla Oled apareciera el pictograma. Hicimos las conexiones y logramos que con el botón se desconectara el arduino y se volviera a conectar jajaja.
 
+insertar gif
 
-
-- Por otro lado, aprendimos a ser constantes y no rendirnos hasta lograr el objetivo, lo pasamos muy bien haciendo este encargo, fue muy divertido. Aprendimos a interconectar arduinos a una red wifi en donde podemos mandar señales y que la otra perosna la reciba, o al revés, que ellos manden una señal y nosotros recibirlas.
+- Por otro lado, aprendimos a ser constantes y no rendirnos hasta lograr el objetivo, lo pasamos muy bien haciendo este encargo, fue muy divertido. Aprendimos a interconectar arduinos a una red wifi en donde podemos mandar señales y que la otra perosna la reciba, o al revés, que ellos manden una señal y nosotras recibirlas.
 - También logramos hacer que el botón mandara el estado de encendido y apagado y se podía ver en la data de Adafruit; teníamos que mantener apretado el botón unos tres segundos y en la data aparecía `ON`
+
+|1|2|
+|---|---|
+| <img src="./imagenes/vxlentiinaa_imagenes/estado.gif" alt="error" width="300"> | <img src="./imagenes/vxlentiinaa_imagenes/data.gif" alt="error" width="300"> |
