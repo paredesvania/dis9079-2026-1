@@ -29,7 +29,7 @@ Una vez actualizados, logramos conectar con Adafruit IO y probamos con éxito un
 Durante la clase del lunes 6, intentamos encender un LED conectado a una protoboard, pero ningún código funcionó. Ante esto, investigamos en blogs y GitHub sin éxito, por lo que decidimos acudir a Claude AI.
 Le proporcionamos el siguiente *prompt*: 
 
-"Necesito generar un código para Arduino IDE que me permita controlar, a través de Adafruit IO, un Arduino conectado a otro computador. Este Arduino tendrá un LED que deseo encender y apagar desde los dashboards de Adafruit IO".
+>"Necesito generar un código para Arduino IDE que me permita controlar, a través de Adafruit IO, un Arduino conectado a otro computador. Este Arduino tendrá un LED que deseo encender y apagar desde los dashboards de Adafruit IO".
 
 
 Creamos un feed llamado "led-control" y un dashboard vinculado. Con el código generado por la IA, realizamos las conexiones en la protoboard,con ayuda de Claude AI, y finalmente logramos controlar el LED de forma remota desde otros dispositivos.
