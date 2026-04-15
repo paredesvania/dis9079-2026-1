@@ -111,12 +111,13 @@ Tipos de obras que hace.
 
 ## Bibliografía
 
-https://www.flong.com/archive/bio/en/index.html
+Levin, G. (s.f.). *Bio*. Flong. [https://www.flong.com/archive/bio/en/index.html](https://www.flong.com/archive/bio/en/index.html)
 
-https://www.flong.com/archive/projects/messa_inst/index.html
+Levin, G., Lieberman, Z., Blonk, J., & La Barbara, J. (2003). *Messa di Voce*. Flong. [https://www.flong.com/archive/projects/messa_inst/index.html](https://www.flong.com/archive/projects/messa_inst/index.html)
 
-https://learn.adafruit.com/welcome-to-adafruit-io
+Adafruit. (2015). *Welcome to Adafruit IO*. Adafruit Learning System. [https://learn.adafruit.com/welcome-to-adafruit-io](https://learn.adafruit.com/welcome-to-adafruit-io)
 
-https://learn.adafruit.com/series/adafruit-io-basics
+Adafruit. (s.f.). *Adafruit IO Basics*. Adafruit Learning System. [https://learn.adafruit.com/series/adafruit-io-basics](https://learn.adafruit.com/series/adafruit-io-basics)
 
-https://learn.adafruit.com/mqtt-adafruit-io-and-you/getting-started-on-adafruit-io
+Adafruit. (s.f.). *MQTT, Adafruit IO and You: Getting started on Adafruit IO*. Adafruit Learning System. [https://learn.adafruit.com/mqtt-adafruit-io-and-you/getting-started-on-adafruit-io](https://learn.adafruit.com/mqtt-adafruit-io-and-you/getting-started-on-adafruit-io)
+
