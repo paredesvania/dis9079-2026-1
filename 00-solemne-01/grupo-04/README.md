@@ -30,8 +30,7 @@ En general el proyecto permite entender de forma práctica cómo funciona el int
 
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/5ee5e857-3a3e-42a0-8ace-0b8725b25f91" />
 
-Nos estuvo saliendo solo puntitos durante toda la clase, tratamos con 3 hotspot diferentes y usuarios de adafruit, creemos que falló por el uso de mayúsculas y minúsculas mal puestas, los nombres de los hotspot, además de que las contraseñas eran solo de 8 caracteres. Pero luego cambiamos la contraseña de internet a una mas larga (mas de 8 caracteres y solo con minúsculas y números)
-con ese cambio resulto al enviar datos.
+El código nos estuvo fallando repetidamente, tratamos con 3 hotspot diferentes, también cambiando los usuarios de adafruit, creemos que falló por el uso de mayúsculas y minúsculas mal puestas en los nombres de los hotspot, mismos nombres que aveces tenían un espacio en su nombre, además de que las contraseñas eran solo de 8 caracteres. Pero luego de cambiar la contraseña de internet a una más larga (mas de 8 caracteres y solo con minúsculas y números) y con ese cambio resultó al enviar datos.
 
 <img width="1920" height="1008" alt="imagen1" src="https://github.com/user-attachments/assets/634f3f8f-8182-4513-914b-58559216b30c" />
 
