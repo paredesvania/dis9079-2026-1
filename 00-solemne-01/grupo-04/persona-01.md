@@ -117,10 +117,6 @@ Tipos de obras que hace.
 
 ## Bibliografía
 
-Aquí tienes las fuentes en **formato APA (7ª edición)**:
-
----
-
 **Referencias**
 
 Adafruit. (2015). *Welcome to Adafruit IO*. Adafruit Learning System. [https://learn.adafruit.com/welcome-to-adafruit-io](https://learn.adafruit.com/welcome-to-adafruit-io)
