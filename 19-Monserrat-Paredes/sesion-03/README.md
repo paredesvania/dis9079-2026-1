@@ -32,16 +32,26 @@ Este funciona con C++ y con Phyton.
 
 Código Claude: Ia para generar códigos
 
-Extensiones: lugar para descargar
-Rust: lenguaje por el cual quieren cambiar C++, es más seguro
-Python: lenguaje para ordenadores
-micropython: es más sencillo
-Tipo de tablero: seleccione la placa
-Seleccione la versión de Pico SDK: seleccione la versión
-SPI: se conecta a una pantalla
-I2C: menos conexiones
-Soporte de STDIO: entrada/salida
-LED integrado Pico W
+Extensiones: lugar para descargar.
+
+Rust: lenguaje por el cual quieren cambiar C++, es más seguro.
+
+Python: lenguaje para ordenadores.
+
+micropython: es más sencillo.
+
+Tipo de tablero: seleccione la placa.
+
+Seleccione la versión de Pico SDK: seleccione la versión.
+
+SPI: se conecta a una pantalla.
+
+I2C: menos conexiones.
+
+Soporte de STDIO: entrada/salida.
+
+LED integrado Pico W.
+
 Build: es como el subproducto del final, donde hago cambios y ahí quedan
 Lo importante es que tenga el: nombre.cpp(apretar el botón de hacerlo con c++)
 Raspberry Pi, tiene un Main, todo lo que está adentro de main ocurre.
