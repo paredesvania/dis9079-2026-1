@@ -40,7 +40,7 @@ También vimos que existen placas súper específicas, sobre todo para audio y "
 Además de lo básico, estuve mirando e informandome con lo siqguiente:
 
 1. **Korg:** Caché que marcas grandes como Korg ya meten placas Raspberry Pi dentro de sus sintetizadores digitales. O sea, la placa verde que tenemos es estándar en la industria de la música electrónica.
-2. **Monome:** Son controladores minimalistas súper caros y de culto. Usan hardware parecido al que estamos viendo para crear interfaces de cuadrículas LED que los músicos usan para loopear sonidos.
+2. **Monome:** Son controladores minimalistas súper caros. Usan hardware parecido al que estamos viendo para crear interfaces de cuadrículas LED que los músicos usan para loopear sonidos.
 
 ### Bibliografía y Referencias
 
