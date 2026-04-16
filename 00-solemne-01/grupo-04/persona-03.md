@@ -28,10 +28,11 @@ En el turorial aprendí como hacer un feed, como navegar por el feed y los datos
 
 Por otra parte luego de ver la creación del codigo en arduino con el config.h para ver los datos de temperatura y el encendido y apagado de un Led, enseña a como crar un dashboard y como configurarlo, como agregar un widget y como configurar el mismo, esto para interactuar con el encendido y apagado de un led (ese es el ejemplo) 
 
-Lo que entendi es que adafruit no es solo una plataforma para enviar datos por internet, sino que también recopila datos y nos ayuda a crear interfaces para visualizar algún dato en un formato mas visual.  
+Lo que entendi es que adafruit no es solo una plataforma para enviar datos por internet, sino que también recopila datos y nos ayuda a crear interfaces para visualizar algún dato en un formato mas visual. 
+
+https://www.youtube.com/watch?v=EewQSa6IiVc&t=3s 
 
 <img width="1920" height="1008" alt="Captura de pantalla 2026-04-06 142920" src="https://github.com/user-attachments/assets/e0efb5aa-a970-4d83-bfcc-fc1d09435100" />
-
 
 <img width="1920" height="1080" alt="Captura de pantalla 2026-04-06 142658" src="https://github.com/user-attachments/assets/876aaacc-d42a-4328-85a2-c2b5192f9f27" />
 
