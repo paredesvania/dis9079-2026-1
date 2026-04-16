@@ -2,7 +2,7 @@
 
 investigaciones individuales Benjamin Alvarez
 
-## sobre adafruit i/o
+## Sobre adafruit i/o
 
 ### Qué es Adafruit IO
 
@@ -18,7 +18,7 @@ Para comenzar a usar Adafruit IO con Arduino, se deben seguir estos pasos
 
 2. Ir a Library Manager
 
-3. Buscar: `Adafruit IO Arduino`
+3. Buscar Adafruit IO Arduino
 
 ![instalacion](./imagenes/adafruit-io-arduino.png)
 
@@ -32,7 +32,7 @@ Para comenzar a usar Adafruit IO con Arduino, se deben seguir estos pasos
 
 1. Ir a la página oficial de Adafruit IO
 
-2. Crear una cuenta utilizando el correo institucional (UDP)
+2. Crear una cuenta utilizando el correo institucional
 
 ![cuenta](./imagenes/cuenta.png)
 
@@ -50,13 +50,13 @@ Para comenzar a usar Adafruit IO con Arduino, se deben seguir estos pasos
 
 ## Aprendizaje y dificultades
 
-Durante este trabajo aprendí a utilizar mejor Arduino y Adafruit IO, herramientas que no había usado antes. Con el tiempo logré entender mejor cómo funcionan y cómo es posible controlar dispositivos a distancia, como encender y apagar una luz, lo cual resulta bastante interesante.  
+Durante este trabajo aprendí a utilizar mejor Arduino y Adafruit IO, herramientas que no había usado antes. Con el tiempo logré entender mejor cómo funcionan y cómo es posible controlar dispositivos a distancia, como encender y apagar una luz, lo cual resulta bastante interesante.
 
 En cuanto a las dificultades, al inicio fue complejo entender el funcionamiento general, especialmente la creación de códigos y su correcta ejecución. Esto generó cierta frustración, pero con la práctica y el avance de las clases fui comprendiendo mejor el proceso, especialmente cómo enviar datos desde un dispositivo a la nube y recibirlos correctamente.
 
-## sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
+## Sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
 
-### Anouk Wipprecht y tecnología interactiva  
+### Anouk Wipprecht y tecnología interactiva
 
 Anouk Wipprecht es una diseñadora que trabaja en el ámbito del FashionTech, un campo emergente que combina diseño, robótica, ciencia y diseño de interacción para transformar la moda en una experiencia que va más allá de lo estético. Su trabajo se centra en crear prendas que no solo sean visualmente atractivas, sino que también respondan activamente al entorno y al comportamiento del usuario, integrando tecnología directamente en el cuerpo. Por esto, es reconocida como una figura clave en el desarrollo de la moda tecnológica contemporánea.
 
@@ -86,11 +86,11 @@ El HeartBeatDress también aparece en el último videoclip de la artista estadou
 
 #### Smoke dress
 
-El vestido funciona como una cortina de humo portátil. Mediante tecnologías integradas, la prenda detecta la proximidad de otra persona y crea un velo de humo alrededor del usuario para camuflarlo. 
+El vestido funciona como una cortina de humo portátil. Mediante tecnologías integradas, la prenda detecta la proximidad de otra persona y crea un velo de humo alrededor del usuario para camuflarlo.
 
 ![smoke dress](./imagenes/smoke-dress.jpg)
 
-La tecnología funciona mediante un microcontrolador y un sistema de sensores personalizados. Este sistema calcula datos sobre el espacio personal del usuario y los envía al generador de humo situado entre los omóplatos
+La tecnología funciona mediante un microcontrolador y un sistema de sensores personalizados. Este sistema calcula datos sobre el espacio personal del usuario y los envía al generador de humo situado entre los omóplatos.
 
 <https://www.youtube.com/watch?v=G-0lTP90hVc>
 

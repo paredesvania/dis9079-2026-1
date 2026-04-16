@@ -1,54 +1,42 @@
 # grupo-11
 
-## integrantes
+## Integrantes
 
 * Anays Valentina Cornejo Candia
   
 * Benjamín Alonso Álvarez Pavez
 
-## descripción del proyecto
+## Descripción del proyecto
 
-Al inicio del proyecto, como dupla no sabíamos muy bien qué hacer, estábamos bastante perdidos. En la última clase, trabajando al unísono con Aaron, pudimos entender mejor cómo usar el programa y ver qué cosas se podían lograr.
+## Introducción
 
-Al principio teníamos otras ideas, pero como aún no entendíamos bien cómo hacerlas, preferimos partir con algo más simple para aprender mejor cómo funcionan los programas y las placas.
+Al inicio del proyecto, como dupla no sabíamos muy bien qué hacer, estábamos bastante perdidos.
 
-Tras investigar por los tutoriales de la página Adafruit IO, nos llamó la atención uno que mostraba cómo prender y apagar una luz y decidimos hacer esa idea.
+En la última clase, trabajando al unísono con Aarón, fuimos entendiendo mejor el entorno de desarrollo y las posibilidades del Arduino UNO R4 WiFi junto a Adafruit IO.
 
-Cuando ya teníamos claro qué queríamos hacer, copiamos el código de config.h de GitHub y le pedimos a Chat GPT que lo modificara para poder prender y apagar un led, después también le pedimos ayuda para crear el código para enviar las instrucciones.
+Dado que todavía no manejamos bien las herramientas, decidimos comenzar con algo simple que nos permitiera comprender lo básico de comunicación entre dispositivos antes de intentar algo más complejo.
 
-Para eso, conectamos un led a una protoboard e hicimos un circuito usando un Arduino UNO R4 WiFi. Conectamos el GND de la placa al negativo de la protoboard y el pin de 3.3V al positivo, luego conectamos la pata positiva del led al positivo de la protoboard y la pata negativa al negativo de la protoboard.
+## Investigación y elección del proyecto
+
+Revisamos distintos tutoriales de Adafruit IO. A partir de esto, elegimos un ejemplo de encendido y apagado de un LED mediante un dispositivo externo.
+
+En un inicio consideramos otras ideas, pero no las desarrollamos porque aún no contamos con los conocimientos necesarios para implementarlas correctamente.
+
+### Circuito
+
+Se utilizó un Arduino UNO R4 WiFi conectado a una protoboard con la siguiente configuración:
+
+- GND al negativo de la protoboard
+
+- 3.3V al positivo de la protoboard
+
+- Un LED externo conectado entre positivo y negativo
 
 ![circuito](./imagenes/ilustracion.jpg)
 
-El Arduino estaba conectado al computador y las instrucciones de ON y OFF se enviaban desde el iPad a través del dashboard que creamos en Adafruit.
+Posteriormente, el LED externo fue reemplazado por el LED integrado de la placa (LED_BUILTIN). Este cambio se realizó debido a que el LED externo no respondía a las instrucciones, por lo que se optó por utilizar el LED integrado.
 
-El led encendía y el código se recibía, pero al principio no logramos controlarlo porque no respondía a la instrucción de ON y OFF.
-
-![on y off](./imagenes/config.png)
-
-Por eso le pedimos ayuda a Chat GPT para modificar el código, para que el led respondiera bien a las instrucciones de ON y OFF desde el iPad. En ese cambio reemplazamos la línea ledPin = 2 por int ledPin = LED_BUILTIN;, pasamos de usar un led externo a usar el led integrado del Arduino.
-
-Y finalmente resultó, el código funcionó y logramos prender y apagar el led desde el iPad, incluso a distancia. (ദ്ദി˙ᗜ˙)
-
-<https://github.com/user-attachments/assets/60f147d6-ef7a-4355-82a9-db9ce9517e1d>
-
-Se veía reflejado en el  feed de Adafruit IO
-
-![feed](./imagenes/led.png)
-
-También en el mismo dashboard de ON y OFF encontramos otros blocks de adafruit que permite mandar mensajes que luego aparecen en el arduino ide y en el feed de Adafruit IO
-
-<https://github.com/user-attachments/assets/134a4b66-3015-498e-9406-94555eb84eab>
-
-Otro de los blocks que encontramos es un slide que al moverlo hacia la izquierda y derecha dan distintos números según la posición en donde lo dejemos y estos números luego se ven reflejados en el gráfico de líneas que hay en el feed de Adafruit IO y también aparecen en el arduino ide.
-
-![grafico](./imagenes/grafico-feed-slide.png)
-
-![dashboards](./imagenes/dashboard.png)
-
-De a poco estamos entendiendo mejor el funcionamiento del arduino y de Adafruit IO y las posibilidades de hacer cosas nuevas, estamos muy motivados y emocionados de realizar las ideas que tenemos en mente.
-
-## materiales usados en solemne-01
+## Materiales usados en solemne-01
 
 | Componentes Resultado Final | Precio | Cantidad | Link |
 | :--------------------------- | ------ | -------- | :---- |
@@ -61,137 +49,152 @@ De a poco estamos entendiendo mejor el funcionamiento del arduino y de Adafruit 
 | Cable Dupont (pack 40 uni.) | $2.900 | x4       | <https://mcielectronics.cl/shop/product/cable-dupont> |
 | Led                 | $70    | x1       | <https://afel.cl/products/diodo-led-5mm-ultrabrillante-blanco> |
 
-## código usado con Adafruit IO
+## Códigos y funcionamiento
 
-### código para enviar
+### Código .ino
+
+Este código controla el funcionamiento del LED según los datos que recibe desde Adafruit IO.
 
 ```cpp
-// #include "config.h"
-
+#include "config.h"
 
 // Crear feed (nombre: led)
 AdafruitIO_Feed *led = io.feed("led");
 
-
 // Pin del LED
 int ledPin = LED_BUILTIN;
-
 
 void setup() {
   Serial.begin(115200);
   pinMode(ledPin, OUTPUT);
 
-
   // Conectar a Adafruit IO
   Serial.print("Conectando...");
   io.connect();
 
-
   // Esperar conexión
-  while(io.status() < AIO_CONNECTED) {
+  while (io.status() < AIO_CONNECTED) {
     Serial.print(".");
     delay(500);
   }
 
-
   Serial.println();
   Serial.println("Conectado a Adafruit IO");
 
-
   // Escuchar cambios en el feed
   led->onMessage(handleMessage);
-
 
   // Obtener último valor guardado
   led->get();
 }
 
-
 void loop() {
   io.run();
 }
-
 
 // Función que se ejecuta cuando llega dato
 void handleMessage(AdafruitIO_Data *data) {
   Serial.print("Valor recibido: ");
   Serial.println(data->value());
 
+  String value = data->value();
 
-  if (data->toString() == "ON") {
+  if (value == "ON") {
     digitalWrite(ledPin, HIGH);
   }
-  else if (data->toString() == "OFF") {
+  else if (value == "OFF") {
     digitalWrite(ledPin, LOW);
   }
 }
-
 ```
 
-### codigo config.h
+### Código config.h
+
+Este código contiene los datos necesarios para conectarse a la red WiFi y a Adafruit IO, como el nombre de la red, la contraseña y las claves de usuario.
 
 ```cpp
-//// Descomenta SOLO si usas placas con AirLift o WiFi especial
-// #define USE_AIRLIFT
-
-
 // Librería
 #include "AdafruitIO_WiFi.h"
 
-
-// 🔐 Tus datos (CAMBIAR)
+// 🔐 Tus datos (CAMBIAR si es necesario)
 #define WIFI_SSID "monkiboy"
 #define WIFI_PASS "benja123"
 
-
 #define IO_USERNAME "benjaminalvarez21"
-#define IO_KEY "blabla"
+#define IO_KEY "bla bla"
 
 
-
-
-#if defined(USE_AIRLIFT) || defined(ADAFRUIT_METRO_M4_AIRLIFT_LITE) || \
-    defined(ADAFRUIT_PYPORTAL)
-
-
-// Pines para ESP32 AirLift
-#if !defined(SPIWIFI_SS)
-#define SPIWIFI SPI
-#define SPIWIFI_SS 10
-#define NINA_ACK 9
-#define NINA_RESETN 6
-#define NINA_GPIO0 -1
-#endif
-
-
-AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS,
-                   SPIWIFI_SS, NINA_ACK, NINA_RESETN, NINA_GPIO0, &SPIWIFI);
-
-
-#else
-
-
-// 🔵 ESTE ES EL MÁS COMÚN (ESP8266 / ESP32 / UNO R4 WIFI)
+// ESP32 / ESP8266 / UNO R4 WiFi (caso más común)
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
-
-
-#endif
-
 ```
 
-### código para recibir
+## Problemas y ajustes
 
-```cpp
-// rellenar
-```
+Durante el desarrollo surgió un problema, el sistema recibía los datos correctamente, pero el LED no respondía a las instrucciones.
 
-## investigaciones individuales
+#### Primer intento usando LED externo, donde se recibían datos pero el LED no respondía
+
+![intento fallido](./imagenes/on-off-fallo.gif)
+
+Para resolverlo, se decidió reemplazar el LED externo por el LED integrado (LED_BUILTIN). Este cambio permitió que el sistema funcionara correctamente.
+
+#### Funcionamiento correcto utilizando el LED integrado del Arduino.
+
+[![intento definitivo](https://img.youtube.com/vi/q9Ajooq1Ip0/0.jpg)](https://www.youtube.com/watch?v=q9Ajooq1Ip0)
+
+#### Comunicación con Adafruit IO
+
+El Arduino se conectó al computador, mientras que las instrucciones se enviaban desde un iPad a través de un dashboard en Adafruit IO.
+
+Se trabajó con dos comandos principales:
+
+- ON, para encender el LED
+
+- OFF, para apagar el LED
+
+Los valores enviados desde el dashboard se registraban en un feed, el cual permitía visualizar el estado del sistema en tiempo real.
+
+#### Imagen del dashboard de Adafruit IO con bloques ON/OFF
+
+![dashboard on off](./imagenes/dashboard-on-off.jpg)
+
+#### Registro en Adafruit IO del encendido y apagado del LED
+
+![feed](./imagenes/led.png)
+
+## Funcionalidades exploradas
+
+Además del funcionamiento principal del LED, hicimos experimentaciones con otras herramientas del dashboard de Adafruit IO para explorar.
+
+Primero, probamos el envío de mensajes desde el dashboard, los cuales se visualizan tanto en el monitor serial como en el feed de Adafruit IO.
+
+#### Prueba de envío de mensajes desde Adafruit IO al monitor serial
+
+[![mensajes](https://img.youtube.com/vi/bQc3ydI18RI/0.jpg)](https://www.youtube.com/watch?v=bQc3ydI18RI)
+
+También utilizamos un slider que permite enviar valores numéricos y observar su comportamiento en un gráfico dentro de Adafruit IO.
+
+#### Visualización de valores enviados desde el slider en el gráfico de Adafruit IO
+
+![grafico slider](./imagenes/grafico-feed-slide.png)
+
+#### Dashboard completo
+
+![dashboard completo](./imagenes/dashboard-completo.jpg)
+
+Estas pruebas corresponden a exploraciones realizadas durante el proceso de aprendizaje y no forman parte del sistema final.
+
+## Conclusión
+
+Este proyecto nos ayudó a entender cómo se comunica un dispositivo físico con una plataforma en la nube. A partir de algo sencillo, aprendimos las bases para hacer proyectos más complejos en el futuro. También vimos la importancia de ordenar bien el código y la documentación, y de enfocarnos en lo principal del programa. Poco a poco vamos entendiendo mejor cómo funciona el Arduino y Adafruit IO, y las posibilidades que tienen. Estamos muy motivados y emocionados de realizar las nuevas ideas que tenemos en mente.
+
+## Investigaciones individuales
 
 [persona-01.md](./persona-01.md) Anays Cornejo
 
 [persona-02.md](./persona-02.md) Benjamín Álvarez
 
-## bibliografía
+## Bibliografía
 
 <https://learn.adafruit.com/series/adafruit-io-basics>
 

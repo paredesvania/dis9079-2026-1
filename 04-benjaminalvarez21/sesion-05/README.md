@@ -18,11 +18,11 @@ Es importante instalar todas las dependencias que solicita ya que son necesarias
 
 ## Pasos de configuración
 
-- Crear un archivo nuevo (*New File*) en Arduino IDE
+- Crear un archivo nuevo (New File) en Arduino IDE
 
 - Copiar el código proporcionado en Discord
 
-- Crear una nueva pestaña (*New Tab*) llamada `config.h`
+- Crear una nueva pestaña (New Tab) llamada `config.h`
 
 - Ir al repositorio en GitHub `solemne 1 / grupo 11 / enviar / config.h`
 

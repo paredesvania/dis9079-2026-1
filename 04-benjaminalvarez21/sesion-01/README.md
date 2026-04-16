@@ -2,7 +2,7 @@
 
 lunes 09 marzo 2026
 
-En la primera clase se presentó el curso, el equipo docente que es Aarón Montoya y Mateo Arce y el uso de GitHub como bitácora de trabajo. Se explicó que utilizaremos microcontroladores como Arduino Uno R4 WiFi y Raspberry Pi Pico 2W, trabajando desde nuestros propios computadores. Si no hay computadores propios puedes pedir prestado a Aaron.
+En la primera clase se presentó el curso, el equipo docente que es Aarón Montoya y Mateo Arce y el uso de GitHub como bitácora de trabajo. Se explicó que utilizaremos microcontroladores como Arduino Uno R4 WiFi y Raspberry Pi Pico 2W, trabajando desde nuestros propios computadores. Si no hay computadores propios puedes pedir prestado a Aarón.
 
 El curso aborda la tecnología desde una mirada crítica, entendiéndola como un sistema cultural además de técnico. Se revisaron referentes como Casey Reas, Ben Fry y John Maeda, junto a herramientas como Processing (lenguaje de programación de código abierto y un entorno de desarrollo integrado) y p5.js (biblioteca de JavaScript gratuita y de código abierto diseñada para la programación creativa).
 
