@@ -12,9 +12,9 @@
 
 Al inicio del proyecto, como dupla no sabíamos muy bien qué hacer, estábamos bastante perdidos.
 
-En la última clase, trabajando al unísono con Aarón, fuimos entendiendo mejor el entorno de desarrollo y las posibilidades del Arduino UNO R4 WiFi junto a Adafruit IO.
+En la última clase, trabajando al unísono con Aarón, fuimos entendiendo mejor cómo funciona el Arduino UNO R4 WiFi y las posibilidades que ofrece junto a Adafruit IO.
 
-Dado que todavía no manejamos bien las herramientas, decidimos comenzar con algo simple que nos permitiera comprender lo básico de comunicación entre dispositivos antes de intentar algo más complejo.
+Como todavía no manejamos bien las herramientas, decidimos comenzar con algo simple que nos permitiera comprender lo básico de comunicación entre dispositivos antes de intentar algo más complejo.
 
 ## Investigación y elección del proyecto
 
@@ -168,13 +168,9 @@ Además del funcionamiento principal del LED, hicimos experimentaciones con otra
 
 Primero, probamos el envío de mensajes desde el dashboard, los cuales se visualizan tanto en el monitor serial como en el feed de Adafruit IO.
 
-#### Envío de mensajes desde el dashboard al monitor serial del Arduino IDE
-
 [![mensajes](https://img.youtube.com/vi/bQc3ydI18RI/0.jpg)](https://www.youtube.com/watch?v=bQc3ydI18RI)
 
 También utilizamos un slider que permite enviar valores numéricos y observar su comportamiento en un gráfico dentro de Adafruit IO y en el monitor serial del Arduino IDE.
-
-#### Visualización de los valores enviados desde un slider del dashboard en el feed de Adafruit IO y en el monitor serial del Arduino IDE
 
 [![mensajes](https://img.youtube.com/vi/D_FXi4-FY18/0.jpg)](https://www.youtube.com/watch?v=D_FXi4-FY18)
 
