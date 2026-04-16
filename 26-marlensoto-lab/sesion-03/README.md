@@ -21,7 +21,7 @@ En esta actividad se trabajará con dos microcontroladores:
 - **Arduino:** orientado principalmente a controlar dispositivos físicos (sensores, actuadores, etc.)  
 - **Raspberry Pi Pico:** permite realizar procesamiento y ejecución de tareas más complejas  
 
-📌 Dependiendo del objetivo del proyecto, **no siempre será necesario utilizar un computador** durante la presentación.
+Dependiendo del objetivo del proyecto, **no siempre será necesario utilizar un computador** durante la presentación.
 
 ---
 
@@ -35,7 +35,7 @@ En esta actividad se trabajará con dos microcontroladores:
 
 - Ver fragmentos de *Monty Python* (referencia audiovisual)  
 - Crear diagramas de flujo utilizando:  
-  👉 https://mermaid.js.org/  
+https://mermaid.js.org/  
 
 - Leer los PDF proporcionados para comprender mejor el desarrollo de la solemne  
 
