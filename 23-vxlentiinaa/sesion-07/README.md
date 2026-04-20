@@ -29,6 +29,36 @@ Apuntes máquinas: libro que están haciendo con misaa sobre el taller de máqui
 
 **Cad: computer aided dessing 💋**
 
+<img src="./imagenes/tinkercad_01.png" alt="tinkercad" width="600">
+
+```cpp
+// C++ code
+//
+
+
+// queremos que nuestro Arduino
+// sea capaz de leer un potenciometro
+// conectado a la entrada A0.
+
+int lectura = 0;
+
+
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  lectura = analogRead(A0);
+  Serial.println(lectura);
+}
+```
+
+Luego lo hicimos en análogo. Conectamos el arduino con el pote y funcionó :)
+
+<img src="./imagenes/arduino_pote.png" alt="tinkercad" width="600">
 
 
 
