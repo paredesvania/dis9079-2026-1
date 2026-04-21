@@ -24,7 +24,8 @@ Proceso:
 
 ![imagenes](./imagenes/aruinoprotoboard.jpeg)
 
-
+ <img src="./imagenes/motorgif.gif" alt="pruebas" width="600">
+ 
 
 Cómo cambiar/reemplazar el potenciomaetro por un LDR?
 
