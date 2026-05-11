@@ -1,6 +1,6 @@
 # sesion-08
 
-Actuadores
+Veremos ctuadores
 
 Mu editor RIP
 
@@ -23,6 +23,14 @@ Descargar CircuitPython 10.2.0 e insertarlo al disco duro de la raspi
 
 <https://learn.adafruit.com/welcome-to-circuitpython/advanced-serial-console-on-windows>
 
+Descargar la última versión de PuTTY 
+
+En PuTTY, conexión a serial, cambiar el port a 115200 y el host name al com en donde se encuentra nuestra raspberry pi pico 2 w 
+
+Hacer ctrl + c 
+
+Sino funciona lo anterior hacer ctrl + d.
+
 usar arduino para mover el servo
 
 enviar potenciometro de la raspi
@@ -37,7 +45,7 @@ poner potenciometro en la raspi
 |     CABLE VERDE   |CABLE ROJO | CABLE AMARILLO  |
 | PIN 23- GROUND  resistor 1%   | PIN 36- 3V3 (OUT) | PIN 31- GP26 ADCO 12C1 SDA |
 
-Siempre grabar para que funcione el código en Visual studio
+Siempre grabar para que funcione el código en Visual studio y tiene que decir code.pi
 
 import = include
 
