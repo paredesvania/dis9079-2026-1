@@ -2,4 +2,4 @@
 
 lunes 11 mayo 2026
 
-Clasews canceladas por fuego
+Clases canceladas por fuego
