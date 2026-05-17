@@ -8,6 +8,8 @@
 
 ## Descripción textual del proyecto
 
+<https://io.adafruit.com/udpmontoyamoraga/feeds/potenciometro-05>
+
 ## Materiales usados
 
 | Componente | Valor Unidad | Cantidad | Link |
