@@ -72,6 +72,83 @@ while True:
 
 ## Código usado para recibir
 
+```cpp
+#include <Servo.h>
+#include <WiFiS3.h>
+#include "Adafruit_MQTT.h"
+#include "Adafruit_MQTT_Client.h"
+
+
+#define WIFI_SSID    "si"
+#define WIFI_PASS    "mailo6192"
+#define AIO_SERVER   "io.adafruit.com"
+#define AIO_PORT     1883
+#define AIO_USERNAME "udpmontoyamoraga"
+#define AIO_KEY      "keydeaarón"
+#define AIO_FEED     AIO_USERNAME "/feeds/potenciometro-05"
+
+const int SERVO_PIN = 9; // se indica dónde está el motor servo (pin 9 del arduino)
+Servo miServo;
+
+WiFiClient wifiClient;
+Adafruit_MQTT_Client mqtt(&wifiClient, AIO_SERVER, AIO_PORT, AIO_USERNAME, AIO_KEY);
+
+Adafruit_MQTT_Subscribe potFeed = Adafruit_MQTT_Subscribe(&mqtt, AIO_FEED);
+
+
+// se conecta a wifi, y si no puede lo vuelve a intentar
+void connectWiFi() {
+  if (WiFi.status() == WL_CONNECTED) return;
+  Serial.print("Conectando a WiFi");
+  while (WiFi.begin(WIFI_SSID, WIFI_PASS) != WL_CONNECTED) {
+    Serial.print(".");
+    delay(1000);
+  }
+  Serial.println("\n WiFi conectado");
+}
+
+
+void connectMQTT() {
+  int8_t ret;
+  if (mqtt.connected()) return;
+  Serial.print("Conectando a Adafruit IO");
+  while ((ret = mqtt.connect()) != 0) {
+    Serial.println(mqtt.connectErrorString(ret));
+    mqtt.disconnect();
+    delay(3000);
+  }
+  Serial.println("\n✓ Adafruit IO conectado");
+}
+
+
+void setup() {
+  Serial.begin(115200); // cambiar el serial monitor a 115200 en caso de que no esté en ese valo
+  delay(500);
+  myServo.attach(SERVO_PIN);
+  myServo.write(0); // posición inicial del servo
+  connectWiFi();
+  connectMQTT();
+  mqtt.subscribe(&potFeed);
+}
+
+void loop() { // ésto es en caso de que se caiga la conexión
+  connectWiFi();
+  connectMQTT();
+
+  Adafruit_MQTT_Subscribe* subscription = mqtt.readSubscription(500);
+
+  if (subscription == &potFeed) {
+    char* payload = (char*)potFeed.lastread;
+
+    int rawValue = atoi(payload);
+    rawValue = constrain(rawValue, 0, 1023);
+
+    int angle = map(rawValue, 0, 1023, 0, 180);
+    myServo.write(angle); // servo se mueve jijijiji
+  }
+}
+```
+
 ## Imágenes del proyecto
 
 ## Animaciones del proyecto
