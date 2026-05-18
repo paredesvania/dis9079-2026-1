@@ -2,9 +2,9 @@
 
 ## Integrantes
 
-- nombre completo / github
-- nombre completo / github
-- nombre completo / github
+- Sofía Cartes Aravena / <https://github.com/sofiacartes>
+- Monserrat Paredes / <https://github.com/Monserrat-Paredes>
+- Valentina Ruz Pizarro / <https://github.com/vxlentiinaa>
 
 ## Descripción textual del proyecto
 
